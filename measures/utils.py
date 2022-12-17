@@ -25,8 +25,65 @@ def neighbours(c: owlready2.entity.ThingClass) -> Set[owlready2.entity.ThingClas
     return neighbourhood.difference({owlready2.owl.Thing})
 
 
-def longest_path(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingClass) -> int:
-    pass
+def _longest(origin: owlready2.entity.ThingClass, target: owlready2.entity.ThingClass,
+             path: Optional[List[owlready2.entity.ThingClass]] = None
+             ) -> Tuple[List[owlready2.entity.ThingClass], bool]:
+    path = path or []
+    path.append(origin)
+    neighbourhood = neighbours(origin).difference(path)
+    if not len(neighbourhood):
+        return [*path, "dummy"], False
+    else:
+        paths = [_shortest(neighbour, target, path) for neighbour in neighbourhood]
+        found_idx, found_len = None, -1
+        not_found_idx, not_found_len = None, -1
+        for idx, it_path in enumerate(paths):
+            if target in it_path[0]:
+                if len(it_path[0]) > found_len:
+                    found_idx = idx
+                    found_len = len(it_path[0])
+            else:
+                if len(it_path[0]) > not_found_len:
+                    not_found_idx = idx
+                    not_found_len = len(it_path[0])
+
+        if found_idx is not None:
+            return paths[found_idx][0], True
+        return paths[not_found_idx][0], False
+
+
+def longest_path(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingClass, return_path: bool = False
+                 ) -> Union[int, List[owlready2.entity.ThingClass]]:
+    p1, found1 = _longest(c1, c2)
+    p2, found2 = _longest(c2, c1)
+
+    if found1 and not found2:
+        if return_path:
+            return p1
+        return len(p1)
+    if found1 and not found2:
+        if return_path:
+            return p1
+        return len(p1)
+    if found2 and not found1:
+        if return_path:
+            return p2
+        return len(p2)
+
+    common = set(p1).intersection(set(p2))
+    dist_min = sys.maxsize
+    c_min = None
+    for c in common:
+        dist = p1.index(c) + p2.index(c) - 1
+        if dist < dist_min:
+            dist_min = dist
+            c_min = c
+
+    path = p1[:p1.index(c_min)] + p2[:p2.index(c_min) - 1][::-1]
+    if return_path:
+        return path
+    else:
+        return len(path)
 
 
 def _shortest(origin: owlready2.entity.ThingClass, target: owlready2.entity.ThingClass,
