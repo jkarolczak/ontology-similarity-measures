@@ -60,15 +60,15 @@ def longest_path(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingClas
     if found1 and not found2:
         if return_path:
             return p1
-        return len(p1)
+        return len(p1) - 1
     if found1 and not found2:
         if return_path:
-            return p1
+            return p1 - 1
         return len(p1)
     if found2 and not found1:
         if return_path:
             return p2
-        return len(p2)
+        return len(p2) - 1
 
     common = set(p1).intersection(set(p2))
     dist_min = sys.maxsize
@@ -83,7 +83,7 @@ def longest_path(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingClas
     if return_path:
         return path
     else:
-        return len(path)
+        return len(path) - 1
 
 
 def _shortest(origin: owlready2.entity.ThingClass, target: owlready2.entity.ThingClass,
@@ -125,7 +125,7 @@ def shortest_path(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingCla
                 return p1
             else:
                 return p2
-        return min([len(p1), len(p2)])
+        return min([len(p1) - 1, len(p2) - 1])
     common = set(p1).intersection(set(p2))
     dist_min = sys.maxsize
     c_min = None
@@ -139,4 +139,4 @@ def shortest_path(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingCla
     if return_path:
         return path
     else:
-        return len(path)
+        return len(path) - 1
