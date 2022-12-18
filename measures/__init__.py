@@ -1,1 +1,1 @@
-from measures.measures import shortest_path
+from measures.measures import shortest_path, resnik, lin
