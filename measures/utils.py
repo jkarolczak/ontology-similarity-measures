@@ -1,4 +1,3 @@
-import sys
 from typing import List, Optional, Set, Tuple, Union
 
 from owlready2 import *
