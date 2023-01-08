@@ -1,5 +1,5 @@
 from owlready2 import *
-from measures import resnik, lin
+from measures import sim_resnik, sim_lin
 
 if __name__ == "__main__":
     onto = get_ontology("data/pizza_ext.owl").load()
@@ -14,34 +14,62 @@ if __name__ == "__main__":
 
     c1, c2 = pizza.VegetarianPizza, pizza.VegetarianPizza
     print(c1.name, '|', c2.name)
-    print(resnik(c1, c2))
-    print(lin(c1, c2))
+    print("Resnik:", sim_resnik(c1, c2))
+    print("Lin:", sim_lin(c1, c2))
+
+    print("======================")
+
+    c1, c2 = pizza.CheeseyPizza, pizza.CheeseTopping
+    print(c1.name, '|', c2.name)
+    print("Resnik:", sim_resnik(c1, c2))
+    print("Lin:", sim_lin(c1, c2))
+
+    print("======================")
+
+    c1, c2 = pizza.Capricciosa, pizza.Capricciosa
+    print(c1.name, '|', c2.name)
+    print("Resnik:", sim_resnik(c1, c2))
+    print("Lin:", sim_lin(c1, c2))
+
+    print("======================")
+
+    c1, c2 = pizza.Capricciosa, pizza.American
+    print(c1.name, '|', c2.name)
+    print("Resnik:", sim_resnik(c1, c2))
+    print("Lin:", sim_lin(c1, c2))
+
+    print("======================")
+
+    c1, c2 = pizza.Capricciosa, pizza.Veneziana
+    print(c1.name, '|', c2.name)
+    print("Resnik:", sim_resnik(c1, c2))
+    print("Lin:", sim_lin(c1, c2))
 
     print("======================")
 
     c1, c2 = pizza.VegetarianPizza, pizza.MeatyPizza
     print(c1.name, '|', c2.name)
-    print(resnik(c1, c2))
-    print(lin(c1, c2))
+    print("Resnik:", sim_resnik(c1, c2))
+    print("Lin:", sim_lin(c1, c2))
 
     print("======================")
 
     c1, c2 = pizza.VegetarianPizza, pizza.MeatyPizza
-    print(c1.name, '|',  c2.name)
-    print(resnik(c1, c2, pizza.Pizza))
-    print(lin(c1, c2, pizza.Pizza))
+    print(c1.name, '|',  c2.name, '(under pizza.Pizza)')
+    print("Resnik:", sim_resnik(c1, c2, pizza.Pizza))
+    print("Lin:", sim_lin(c1, c2, pizza.Pizza))
 
     print("======================")
 
     c1, c2 = pizza.Capricciosa, pizza.American
-    print(c1.name, '|',  c2.name)
-    print(resnik(c1, c2, pizza.Pizza))
-    print(lin(c1, c2, pizza.Pizza))
+    print(c1.name, '|',  c2.name, '(under pizza.Pizza)')
+    print("Resnik:", sim_resnik(c1, c2, pizza.Pizza))
+    print("Lin:", sim_lin(c1, c2, pizza.Pizza))
 
     print("======================")
 
     c1, c2 = pizza.Capricciosa, pizza.Veneziana
-    print(c1.name, '|',  c2.name)
-    print(resnik(c1, c2, pizza.Pizza))
-    print(lin(c1, c2, pizza.Pizza))
+    print(c1.name, '|',  c2.name, '(under pizza.Pizza)')
+    print("Resnik:", sim_resnik(c1, c2, pizza.Pizza))
+    print("Lin:", sim_lin(c1, c2, pizza.Pizza))
 

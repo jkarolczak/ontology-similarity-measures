@@ -2439,657 +2439,657 @@ This is an example ontology that contains all constructs required for the variou
   <rdf:type rdf:resource="pizza.owl#Country"/>
 </owl:Thing>
 
-<pizz:Caprina rdf:about="caprina1">
+<pizz:Margherita rdf:about="pizza.owl#margherita1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="sundriedtomatotopping1"/>
-  <pizz:hasTopping rdf:resource="goatscheesetopping1"/>
-  <pizz:hasTopping rdf:resource="tomatotopping1"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping1"/>
-</pizz:Caprina>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping1"/>
+</pizz:Margherita>
 
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping1">
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </pizz:MozzarellaTopping>
 
-<pizz:SundriedTomatoTopping rdf:about="sundriedtomatotopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:SundriedTomatoTopping>
-
-<pizz:GoatsCheeseTopping rdf:about="goatscheesetopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:GoatsCheeseTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping1">
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </pizz:TomatoTopping>
 
-<pizz:Veneziana rdf:about="veneziana1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="capertopping1"/>
-  <pizz:hasTopping rdf:resource="pinekernels1"/>
-  <pizz:hasTopping rdf:resource="sultanatopping1"/>
-  <pizz:hasTopping rdf:resource="tomatotopping2"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping2"/>
-  <pizz:hasTopping rdf:resource="olivetopping1"/>
-  <pizz:hasTopping rdf:resource="oniontopping1"/>
-</pizz:Veneziana>
-
-<pizz:PineKernels rdf:about="pinekernels1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:PineKernels>
-
-<pizz:OliveTopping rdf:about="olivetopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OliveTopping>
-
-<pizz:CaperTopping rdf:about="capertopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:CaperTopping>
-
-<pizz:SultanaTopping rdf:about="sultanatopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:SultanaTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:OnionTopping rdf:about="oniontopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OnionTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:SloppyGiuseppe rdf:about="sloppygiuseppe1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="tomatotopping3"/>
-  <pizz:hasTopping rdf:resource="greenpeppertopping1"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping3"/>
-  <pizz:hasTopping rdf:resource="oniontopping2"/>
-  <pizz:hasTopping rdf:resource="hotspicedbeeftopping1"/>
-</pizz:SloppyGiuseppe>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:HotSpicedBeefTopping rdf:about="hotspicedbeeftopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:HotSpicedBeefTopping>
-
-<pizz:GreenPepperTopping rdf:about="greenpeppertopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:GreenPepperTopping>
-
-<pizz:OnionTopping rdf:about="oniontopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OnionTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:FruttiDiMare rdf:about="fruttidimare1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="mixedseafoodtopping1"/>
-  <pizz:hasTopping rdf:resource="tomatotopping4"/>
-  <pizz:hasTopping rdf:resource="garlictopping1"/>
-</pizz:FruttiDiMare>
-
-<pizz:MixedSeafoodTopping rdf:about="mixedseafoodtopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MixedSeafoodTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:GarlicTopping rdf:about="garlictopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:GarlicTopping>
-
-<pizz:AmericanHot rdf:about="americanhot1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="hotgreenpeppertopping1"/>
-  <pizz:hasTopping rdf:resource="peperonisausagetopping1"/>
-  <pizz:hasTopping rdf:resource="tomatotopping5"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping4"/>
-  <pizz:hasTopping rdf:resource="jalapenopeppertopping1"/>
-</pizz:AmericanHot>
-
-<pizz:HotGreenPepperTopping rdf:about="hotgreenpeppertopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:HotGreenPepperTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:PeperoniSausageTopping rdf:about="peperonisausagetopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:PeperoniSausageTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping5">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:JalapenoPepperTopping rdf:about="jalapenopeppertopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:JalapenoPepperTopping>
-
-<pizz:LaReine rdf:about="lareine1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping5"/>
-  <pizz:hasTopping rdf:resource="hamtopping1"/>
-  <pizz:hasTopping rdf:resource="mushroomtopping1"/>
-  <pizz:hasTopping rdf:resource="tomatotopping6"/>
-  <pizz:hasTopping rdf:resource="olivetopping2"/>
-</pizz:LaReine>
-
-<pizz:HamTopping rdf:about="hamtopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:HamTopping>
-
-<pizz:OliveTopping rdf:about="olivetopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OliveTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping5">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:MushroomTopping rdf:about="mushroomtopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MushroomTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping6">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:Parmense rdf:about="parmense1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping6"/>
-  <pizz:hasTopping rdf:resource="hamtopping2"/>
-  <pizz:hasTopping rdf:resource="parmesantopping1"/>
-  <pizz:hasTopping rdf:resource="tomatotopping7"/>
-  <pizz:hasTopping rdf:resource="asparagustopping1"/>
-</pizz:Parmense>
-
-<pizz:HamTopping rdf:about="hamtopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:HamTopping>
-
-<pizz:ParmesanTopping rdf:about="parmesantopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:ParmesanTopping>
-
-<pizz:AsparagusTopping rdf:about="asparagustopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:AsparagusTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping6">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping7">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:Napoletana rdf:about="napoletana1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="tomatotopping8"/>
-  <pizz:hasTopping rdf:resource="anchoviestopping1"/>
-  <pizz:hasTopping rdf:resource="olivetopping3"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping7"/>
-  <pizz:hasTopping rdf:resource="capertopping2"/>
-</pizz:Napoletana>
-
-<pizz:OliveTopping rdf:about="olivetopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OliveTopping>
-
-<pizz:CaperTopping rdf:about="capertopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:CaperTopping>
-
-<pizz:AnchoviesTopping rdf:about="anchoviestopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:AnchoviesTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping7">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping8">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:Mushroom rdf:about="mushroom1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping8"/>
-  <pizz:hasTopping rdf:resource="mushroomtopping2"/>
-  <pizz:hasTopping rdf:resource="tomatotopping9"/>
-</pizz:Mushroom>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping8">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:MushroomTopping rdf:about="mushroomtopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MushroomTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping9">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:Rosa rdf:about="rosa1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="gorgonzolatopping1"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping9"/>
-  <pizz:hasTopping rdf:resource="tomatotopping10"/>
-</pizz:Rosa>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping9">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:GorgonzolaTopping rdf:about="gorgonzolatopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:GorgonzolaTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping10">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:Capricciosa rdf:about="capricciosa1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="hamtopping3"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping10"/>
-  <pizz:hasTopping rdf:resource="olivetopping4"/>
-  <pizz:hasTopping rdf:resource="peperonatatopping1"/>
-  <pizz:hasTopping rdf:resource="capertopping3"/>
-  <pizz:hasTopping rdf:resource="tomatotopping11"/>
-  <pizz:hasTopping rdf:resource="anchoviestopping2"/>
-</pizz:Capricciosa>
-
-<pizz:PeperonataTopping rdf:about="peperonatatopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:PeperonataTopping>
-
-<pizz:HamTopping rdf:about="hamtopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:HamTopping>
-
-<pizz:OliveTopping rdf:about="olivetopping4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OliveTopping>
-
-<pizz:CaperTopping rdf:about="capertopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:CaperTopping>
-
-<pizz:AnchoviesTopping rdf:about="anchoviestopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:AnchoviesTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping10">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping11">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:PrinceCarlo rdf:about="princecarlo1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="rosemarytopping1"/>
-  <pizz:hasTopping rdf:resource="parmesantopping2"/>
-  <pizz:hasTopping rdf:resource="leektopping1"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping11"/>
-  <pizz:hasTopping rdf:resource="tomatotopping12"/>
-</pizz:PrinceCarlo>
-
-<pizz:ParmesanTopping rdf:about="parmesantopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:ParmesanTopping>
-
-<pizz:RosemaryTopping rdf:about="rosemarytopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:RosemaryTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping11">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:LeekTopping rdf:about="leektopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:LeekTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping12">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:Soho rdf:about="soho1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="olivetopping5"/>
-  <pizz:hasTopping rdf:resource="garlictopping2"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping12"/>
-  <pizz:hasTopping rdf:resource="tomatotopping13"/>
-  <pizz:hasTopping rdf:resource="parmesantopping3"/>
-  <pizz:hasTopping rdf:resource="rockettopping1"/>
-</pizz:Soho>
-
-<pizz:GarlicTopping rdf:about="garlictopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:GarlicTopping>
-
-<pizz:ParmesanTopping rdf:about="parmesantopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:ParmesanTopping>
-
-<pizz:OliveTopping rdf:about="olivetopping5">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OliveTopping>
-
-<pizz:RocketTopping rdf:about="rockettopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:RocketTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping12">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping13">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:UnclosedPizza rdf:about="unclosedpizza1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping13"/>
-</pizz:UnclosedPizza>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping13">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:Fiorentina rdf:about="fiorentina1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="spinachtopping1"/>
-  <pizz:hasTopping rdf:resource="parmesantopping4"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping14"/>
-  <pizz:hasTopping rdf:resource="garlictopping3"/>
-  <pizz:hasTopping rdf:resource="olivetopping6"/>
-  <pizz:hasTopping rdf:resource="tomatotopping14"/>
-</pizz:Fiorentina>
-
-<pizz:GarlicTopping rdf:about="garlictopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:GarlicTopping>
-
-<pizz:ParmesanTopping rdf:about="parmesantopping4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:ParmesanTopping>
-
-<pizz:OliveTopping rdf:about="olivetopping6">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OliveTopping>
-
-<pizz:SpinachTopping rdf:about="spinachtopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:SpinachTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping14">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping14">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:Cajun rdf:about="cajun1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping15"/>
-  <pizz:hasTopping rdf:resource="tobascopeppersauce1"/>
-  <pizz:hasTopping rdf:resource="prawnstopping1"/>
-  <pizz:hasTopping rdf:resource="oniontopping3"/>
-  <pizz:hasTopping rdf:resource="tomatotopping15"/>
-  <pizz:hasTopping rdf:resource="peperonatatopping2"/>
-</pizz:Cajun>
-
-<pizz:PeperonataTopping rdf:about="peperonatatopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:PeperonataTopping>
-
-<pizz:TobascoPepperSauce rdf:about="tobascopeppersauce1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TobascoPepperSauce>
-
-<pizz:PrawnsTopping rdf:about="prawnstopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:PrawnsTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping15">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:OnionTopping rdf:about="oniontopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OnionTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping15">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:Siciliana rdf:about="siciliana1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="artichoketopping1"/>
-  <pizz:hasTopping rdf:resource="olivetopping7"/>
-  <pizz:hasTopping rdf:resource="hamtopping4"/>
-  <pizz:hasTopping rdf:resource="tomatotopping16"/>
-  <pizz:hasTopping rdf:resource="garlictopping4"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping16"/>
-  <pizz:hasTopping rdf:resource="anchoviestopping3"/>
+<pizz:Siciliana rdf:about="pizza.owl#siciliana1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#anchoviestopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#olivetopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#hamtopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#garlictopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#artichoketopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping2"/>
 </pizz:Siciliana>
 
-<pizz:HamTopping rdf:about="hamtopping4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:HamTopping>
-
-<pizz:GarlicTopping rdf:about="garlictopping4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:GarlicTopping>
-
-<pizz:OliveTopping rdf:about="olivetopping7">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OliveTopping>
-
-<pizz:ArtichokeTopping rdf:about="artichoketopping1">
+<pizz:ArtichokeTopping rdf:about="pizza.owl#artichoketopping1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </pizz:ArtichokeTopping>
 
-<pizz:AnchoviesTopping rdf:about="anchoviestopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:AnchoviesTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping16">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping16">
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </pizz:TomatoTopping>
 
-<pizz:FourSeasons rdf:about="fourseasons1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="anchoviestopping4"/>
-  <pizz:hasTopping rdf:resource="olivetopping8"/>
-  <pizz:hasTopping rdf:resource="tomatotopping17"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping17"/>
-  <pizz:hasTopping rdf:resource="mushroomtopping3"/>
-  <pizz:hasTopping rdf:resource="peperonisausagetopping2"/>
-  <pizz:hasTopping rdf:resource="capertopping4"/>
-</pizz:FourSeasons>
-
-<pizz:OliveTopping rdf:about="olivetopping8">
+<pizz:OliveTopping rdf:about="pizza.owl#olivetopping1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </pizz:OliveTopping>
 
-<pizz:CaperTopping rdf:about="capertopping4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:CaperTopping>
-
-<pizz:AnchoviesTopping rdf:about="anchoviestopping4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:AnchoviesTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping17">
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </pizz:MozzarellaTopping>
 
-<pizz:MushroomTopping rdf:about="mushroomtopping3">
+<pizz:HamTopping rdf:about="pizza.owl#hamtopping1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MushroomTopping>
+</pizz:HamTopping>
 
-<pizz:PeperoniSausageTopping rdf:about="peperonisausagetopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:PeperoniSausageTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping17">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:American rdf:about="american1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping18"/>
-  <pizz:hasTopping rdf:resource="tomatotopping18"/>
-  <pizz:hasTopping rdf:resource="peperonisausagetopping3"/>
-</pizz:American>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping18">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:PeperoniSausageTopping rdf:about="peperonisausagetopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:PeperoniSausageTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping18">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:Giardiniera rdf:about="giardiniera1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="petitpoistopping1"/>
-  <pizz:hasTopping rdf:resource="tomatotopping19"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping19"/>
-  <pizz:hasTopping rdf:resource="mushroomtopping4"/>
-  <pizz:hasTopping rdf:resource="peperonatatopping3"/>
-  <pizz:hasTopping rdf:resource="olivetopping9"/>
-  <pizz:hasTopping rdf:resource="leektopping2"/>
-  <pizz:hasTopping rdf:resource="slicedtomatotopping1"/>
-</pizz:Giardiniera>
-
-<pizz:PeperonataTopping rdf:about="peperonatatopping3">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:PeperonataTopping>
-
-<pizz:OliveTopping rdf:about="olivetopping9">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:OliveTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping19">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping19">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:MushroomTopping rdf:about="mushroomtopping4">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MushroomTopping>
-
-<pizz:LeekTopping rdf:about="leektopping2">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:LeekTopping>
-
-<pizz:SlicedTomatoTopping rdf:about="slicedtomatotopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:SlicedTomatoTopping>
-
-<pizz:PetitPoisTopping rdf:about="petitpoistopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:PetitPoisTopping>
-
-<pizz:Margherita rdf:about="margherita1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="tomatotopping20"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping20"/>
-</pizz:Margherita>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping20">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:MozzarellaTopping>
-
-<pizz:TomatoTopping rdf:about="tomatotopping20">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:QuattroFormaggi rdf:about="quattroformaggi1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="fourcheesestopping1"/>
-  <pizz:hasTopping rdf:resource="tomatotopping21"/>
-</pizz:QuattroFormaggi>
-
-<pizz:TomatoTopping rdf:about="tomatotopping21">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:TomatoTopping>
-
-<pizz:FourCheesesTopping rdf:about="fourcheesestopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:FourCheesesTopping>
-
-<pizz:PolloAdAstra rdf:about="polloadastra1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <pizz:hasTopping rdf:resource="mozzarellatopping21"/>
-  <pizz:hasTopping rdf:resource="chickentopping1"/>
-  <pizz:hasTopping rdf:resource="redoniontopping1"/>
-  <pizz:hasTopping rdf:resource="tomatotopping22"/>
-  <pizz:hasTopping rdf:resource="cajunspicetopping1"/>
-  <pizz:hasTopping rdf:resource="garlictopping5"/>
-  <pizz:hasTopping rdf:resource="sweetpeppertopping1"/>
-</pizz:PolloAdAstra>
-
-<pizz:GarlicTopping rdf:about="garlictopping5">
+<pizz:GarlicTopping rdf:about="pizza.owl#garlictopping1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </pizz:GarlicTopping>
 
-<pizz:ChickenTopping rdf:about="chickentopping1">
+<pizz:AnchoviesTopping rdf:about="pizza.owl#anchoviestopping1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:ChickenTopping>
+</pizz:AnchoviesTopping>
 
-<pizz:SweetPepperTopping rdf:about="sweetpeppertopping1">
+<pizz:Caprina rdf:about="pizza.owl#caprina1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:SweetPepperTopping>
+  <pizz:hasTopping rdf:resource="pizza.owl#goatscheesetopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#sundriedtomatotopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping3"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping3"/>
+</pizz:Caprina>
 
-<pizz:CajunSpiceTopping rdf:about="cajunspicetopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:CajunSpiceTopping>
-
-<pizz:RedOnionTopping rdf:about="redoniontopping1">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</pizz:RedOnionTopping>
-
-<pizz:MozzarellaTopping rdf:about="mozzarellatopping21">
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </pizz:MozzarellaTopping>
 
-<pizz:TomatoTopping rdf:about="tomatotopping22">
+<pizz:GoatsCheeseTopping rdf:about="pizza.owl#goatscheesetopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:GoatsCheeseTopping>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </pizz:TomatoTopping>
+
+<pizz:SundriedTomatoTopping rdf:about="pizza.owl#sundriedtomatotopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:SundriedTomatoTopping>
+
+<pizz:Napoletana rdf:about="pizza.owl#napoletana1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping4"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#olivetopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping4"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#anchoviestopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#capertopping1"/>
+</pizz:Napoletana>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:OliveTopping rdf:about="pizza.owl#olivetopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OliveTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:CaperTopping rdf:about="pizza.owl#capertopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:CaperTopping>
+
+<pizz:AnchoviesTopping rdf:about="pizza.owl#anchoviestopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:AnchoviesTopping>
+
+<pizz:FourSeasons rdf:about="pizza.owl#fourseasons1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#anchoviestopping3"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#peperonisausagetopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#olivetopping3"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mushroomtopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping5"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#capertopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping5"/>
+</pizz:FourSeasons>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:OliveTopping rdf:about="pizza.owl#olivetopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OliveTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:MushroomTopping rdf:about="pizza.owl#mushroomtopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MushroomTopping>
+
+<pizz:PeperoniSausageTopping rdf:about="pizza.owl#peperonisausagetopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:PeperoniSausageTopping>
+
+<pizz:CaperTopping rdf:about="pizza.owl#capertopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:CaperTopping>
+
+<pizz:AnchoviesTopping rdf:about="pizza.owl#anchoviestopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:AnchoviesTopping>
+
+<pizz:AmericanHot rdf:about="pizza.owl#americanhot1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping6"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#peperonisausagetopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#jalapenopeppertopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping6"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#hotgreenpeppertopping1"/>
+</pizz:AmericanHot>
+
+<pizz:HotGreenPepperTopping rdf:about="pizza.owl#hotgreenpeppertopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:HotGreenPepperTopping>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:PeperoniSausageTopping rdf:about="pizza.owl#peperonisausagetopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:PeperoniSausageTopping>
+
+<pizz:JalapenoPepperTopping rdf:about="pizza.owl#jalapenopeppertopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:JalapenoPepperTopping>
+
+<pizz:QuattroFormaggi rdf:about="pizza.owl#quattroformaggi1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#fourcheesestopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping7"/>
+</pizz:QuattroFormaggi>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:FourCheesesTopping rdf:about="pizza.owl#fourcheesestopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:FourCheesesTopping>
+
+<pizz:LaReine rdf:about="pizza.owl#lareine1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping7"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping8"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#hamtopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mushroomtopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#olivetopping4"/>
+</pizz:LaReine>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:OliveTopping rdf:about="pizza.owl#olivetopping4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OliveTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:HamTopping rdf:about="pizza.owl#hamtopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:HamTopping>
+
+<pizz:MushroomTopping rdf:about="pizza.owl#mushroomtopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MushroomTopping>
+
+<pizz:PolloAdAstra rdf:about="pizza.owl#polloadastra1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping9"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#chickentopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping8"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#garlictopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#sweetpeppertopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#cajunspicetopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#redoniontopping1"/>
+</pizz:PolloAdAstra>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:SweetPepperTopping rdf:about="pizza.owl#sweetpeppertopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:SweetPepperTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:ChickenTopping rdf:about="pizza.owl#chickentopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:ChickenTopping>
+
+<pizz:RedOnionTopping rdf:about="pizza.owl#redoniontopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:RedOnionTopping>
+
+<pizz:GarlicTopping rdf:about="pizza.owl#garlictopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:GarlicTopping>
+
+<pizz:CajunSpiceTopping rdf:about="pizza.owl#cajunspicetopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:CajunSpiceTopping>
+
+<pizz:Veneziana rdf:about="pizza.owl#veneziana1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping10"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#oniontopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#sultanatopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#pinekernels1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#capertopping3"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#olivetopping5"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping9"/>
+</pizz:Veneziana>
+
+<pizz:SultanaTopping rdf:about="pizza.owl#sultanatopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:SultanaTopping>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:PineKernels rdf:about="pizza.owl#pinekernels1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:PineKernels>
+
+<pizz:OliveTopping rdf:about="pizza.owl#olivetopping5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OliveTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:OnionTopping rdf:about="pizza.owl#oniontopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OnionTopping>
+
+<pizz:CaperTopping rdf:about="pizza.owl#capertopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:CaperTopping>
+
+<pizz:SloppyGiuseppe rdf:about="pizza.owl#sloppygiuseppe1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping10"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#oniontopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#greenpeppertopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#hotspicedbeeftopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping11"/>
+</pizz:SloppyGiuseppe>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:GreenPepperTopping rdf:about="pizza.owl#greenpeppertopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:GreenPepperTopping>
+
+<pizz:HotSpicedBeefTopping rdf:about="pizza.owl#hotspicedbeeftopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:HotSpicedBeefTopping>
+
+<pizz:OnionTopping rdf:about="pizza.owl#oniontopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OnionTopping>
+
+<pizz:Mushroom rdf:about="pizza.owl#mushroom1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping12"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mushroomtopping3"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping11"/>
+</pizz:Mushroom>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:MushroomTopping rdf:about="pizza.owl#mushroomtopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MushroomTopping>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:Capricciosa rdf:about="pizza.owl#capricciosa1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#hamtopping3"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#anchoviestopping4"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#olivetopping6"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#peperonatatopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping13"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#capertopping4"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping12"/>
+</pizz:Capricciosa>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:OliveTopping rdf:about="pizza.owl#olivetopping6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OliveTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:HamTopping rdf:about="pizza.owl#hamtopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:HamTopping>
+
+<pizz:PeperonataTopping rdf:about="pizza.owl#peperonatatopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:PeperonataTopping>
+
+<pizz:CaperTopping rdf:about="pizza.owl#capertopping4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:CaperTopping>
+
+<pizz:AnchoviesTopping rdf:about="pizza.owl#anchoviestopping4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:AnchoviesTopping>
+
+<pizz:Parmense rdf:about="pizza.owl#parmense1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#hamtopping4"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#asparagustopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping13"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping14"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#parmesantopping1"/>
+</pizz:Parmense>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:HamTopping rdf:about="pizza.owl#hamtopping4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:HamTopping>
+
+<pizz:ParmesanTopping rdf:about="pizza.owl#parmesantopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:ParmesanTopping>
+
+<pizz:AsparagusTopping rdf:about="pizza.owl#asparagustopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:AsparagusTopping>
+
+<pizz:FruttiDiMare rdf:about="pizza.owl#fruttidimare1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mixedseafoodtopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping15"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#garlictopping3"/>
+</pizz:FruttiDiMare>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:MixedSeafoodTopping rdf:about="pizza.owl#mixedseafoodtopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MixedSeafoodTopping>
+
+<pizz:GarlicTopping rdf:about="pizza.owl#garlictopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:GarlicTopping>
+
+<pizz:UnclosedPizza rdf:about="pizza.owl#unclosedpizza1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping14"/>
+</pizz:UnclosedPizza>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:Fiorentina rdf:about="pizza.owl#fiorentina1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping16"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#garlictopping4"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping15"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#parmesantopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#olivetopping7"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#spinachtopping1"/>
+</pizz:Fiorentina>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:OliveTopping rdf:about="pizza.owl#olivetopping7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OliveTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:SpinachTopping rdf:about="pizza.owl#spinachtopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:SpinachTopping>
+
+<pizz:GarlicTopping rdf:about="pizza.owl#garlictopping4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:GarlicTopping>
+
+<pizz:ParmesanTopping rdf:about="pizza.owl#parmesantopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:ParmesanTopping>
+
+<pizz:Cajun rdf:about="pizza.owl#cajun1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#oniontopping3"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping17"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping16"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tobascopeppersauce1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#peperonatatopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#prawnstopping1"/>
+</pizz:Cajun>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:PrawnsTopping rdf:about="pizza.owl#prawnstopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:PrawnsTopping>
+
+<pizz:TobascoPepperSauce rdf:about="pizza.owl#tobascopeppersauce1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TobascoPepperSauce>
+
+<pizz:OnionTopping rdf:about="pizza.owl#oniontopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OnionTopping>
+
+<pizz:PeperonataTopping rdf:about="pizza.owl#peperonatatopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:PeperonataTopping>
+
+<pizz:Rosa rdf:about="pizza.owl#rosa1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping18"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#gorgonzolatopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping17"/>
+</pizz:Rosa>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:GorgonzolaTopping rdf:about="pizza.owl#gorgonzolatopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:GorgonzolaTopping>
+
+<pizz:American rdf:about="pizza.owl#american1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping18"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping19"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#peperonisausagetopping3"/>
+</pizz:American>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:PeperoniSausageTopping rdf:about="pizza.owl#peperonisausagetopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:PeperoniSausageTopping>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:PrinceCarlo rdf:about="pizza.owl#princecarlo1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#parmesantopping3"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping19"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#rosemarytopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping20"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#leektopping1"/>
+</pizz:PrinceCarlo>
+
+<pizz:LeekTopping rdf:about="pizza.owl#leektopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:LeekTopping>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:ParmesanTopping rdf:about="pizza.owl#parmesantopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:ParmesanTopping>
+
+<pizz:RosemaryTopping rdf:about="pizza.owl#rosemarytopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:RosemaryTopping>
+
+<pizz:Giardiniera rdf:about="pizza.owl#giardiniera1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#slicedtomatotopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping20"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#petitpoistopping1"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#peperonatatopping3"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping21"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#olivetopping8"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#leektopping2"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mushroomtopping4"/>
+</pizz:Giardiniera>
+
+<pizz:LeekTopping rdf:about="pizza.owl#leektopping2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:LeekTopping>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:OliveTopping rdf:about="pizza.owl#olivetopping8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OliveTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:MushroomTopping rdf:about="pizza.owl#mushroomtopping4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MushroomTopping>
+
+<pizz:SlicedTomatoTopping rdf:about="pizza.owl#slicedtomatotopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:SlicedTomatoTopping>
+
+<pizz:PetitPoisTopping rdf:about="pizza.owl#petitpoistopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:PetitPoisTopping>
+
+<pizz:PeperonataTopping rdf:about="pizza.owl#peperonatatopping3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:PeperonataTopping>
+
+<pizz:Soho rdf:about="pizza.owl#soho1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#mozzarellatopping21"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#garlictopping5"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#tomatotopping22"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#parmesantopping4"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#olivetopping9"/>
+  <pizz:hasTopping rdf:resource="pizza.owl#rockettopping1"/>
+</pizz:Soho>
+
+<pizz:TomatoTopping rdf:about="pizza.owl#tomatotopping22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:TomatoTopping>
+
+<pizz:OliveTopping rdf:about="pizza.owl#olivetopping9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:OliveTopping>
+
+<pizz:MozzarellaTopping rdf:about="pizza.owl#mozzarellatopping21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:MozzarellaTopping>
+
+<pizz:GarlicTopping rdf:about="pizza.owl#garlictopping5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:GarlicTopping>
+
+<pizz:ParmesanTopping rdf:about="pizza.owl#parmesantopping4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:ParmesanTopping>
+
+<pizz:RocketTopping rdf:about="pizza.owl#rockettopping1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</pizz:RocketTopping>
 
 <owl:AllDifferent>
   <owl:distinctMembers rdf:parseType="Collection">

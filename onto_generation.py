@@ -10,11 +10,11 @@ if __name__ == "__main__":
     for concept in pizza.Pizza.descendants():
         sub_concepts = list(concept.descendants())
         if len(sub_concepts) == 1:
-            pizza_instance = concept(namespace=onto)
+            pizza_instance = concept(namespace=pizza)
             necessary_toppings = list(concept.hasTopping)
             toppings = []
             for topping in necessary_toppings:
-                toppings.append(topping(namespace=onto))
+                toppings.append(topping(namespace=pizza))
             pizza_instance.hasTopping = toppings
 
     onto.save(file='data/pizza_ext.owl')

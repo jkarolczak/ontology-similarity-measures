@@ -69,17 +69,37 @@ def _most_informative_subsume(c1: owlready2.entity.ThingClass,
     return mis, p_mis
 
 
-def resnik(c1: owlready2.entity.ThingClass,
+def sim_resnik(c1: owlready2.entity.ThingClass,
            c2: owlready2.entity.ThingClass,
            c_top: owlready2.entity.ThingClass = owl.Thing) -> float:
     mis, p_mis = _most_informative_subsume(c1, c2, c_top)
     return -log(p_mis)
 
 
-def lin(c1: owlready2.entity.ThingClass,
+def sim_lin(c1: owlready2.entity.ThingClass,
         c2: owlready2.entity.ThingClass,
         c_top: owlready2.entity.ThingClass = owl.Thing) -> float:
     n = len(list(c_top.instances()))
     mis, p_mis = _most_informative_subsume(c1, c2, c_top, n=n)
     p_c1, p_c2 = _c_prob(c1, c_top, n=n), _c_prob(c2, c_top, n=n)
     return 2 * log(p_mis) / (log(p_c1) + log(p_c2))
+
+
+def _get_relations(c: owlready2.Thing) -> set:
+    relations = set()
+    for property in c.get_properties():
+        for source, target in property.get_relations():
+            if source != c:
+                continue
+            target_concepts = tuple(target.is_a)
+            relations.add((property, target_concepts))
+    return relations
+
+
+def sim_tversky(c1: owlready2.entity.ThingClass,
+        c2: owlready2.entity.ThingClass, alpha: float = 0.5) -> float:
+    c1_relations, c2_relations = _get_relations(c1), _get_relations(c2)
+    intersect = len(c1_relations.intersection(c2_relations))
+    c1_diff = len(c1_relations.difference(c2_relations))
+    c2_diff = len(c2_relations.difference(c1_relations))
+    return intersect / (intersect + alpha * (c1_diff + c2_diff))
