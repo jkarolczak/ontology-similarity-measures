@@ -1,5 +1,6 @@
 from typing import List, Optional, Set, Tuple, Union
 
+import numpy as np
 from owlready2 import *
 
 
@@ -75,6 +76,8 @@ def longest_path(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingClas
 
 def shortest_path(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingClass
                   ) -> List[owlready2.entity.ThingClass]:
+    if c1 == c2:
+        return [c1]
     queue = [[c1, n] for n in neighbours(c1).difference({c1})]
     while queue:
         current = queue.pop(0)
@@ -82,3 +85,18 @@ def shortest_path(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingCla
             return current
         for n in neighbours(current[-1]):
             queue.append([*current, n])
+
+
+def closest_ancestor(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingClass
+                     ) -> Tuple[owlready2.entity.ThingClass, float, float]:
+    subsumes_1, subsumes_2 = set(c1.ancestors()), set(c2.ancestors())
+    subsumes = subsumes_1.intersection(subsumes_2).difference({owl.Thing})
+    ancestor = None
+    n1, n2 = np.inf, np.inf
+    for s in subsumes:
+        s1_dist = len(shortest_path(c1, s))
+        s2_dist = len(shortest_path(c2, s))
+        if s1_dist + s2_dist < n1 + n2:
+            n1, n2 = s1_dist, s2_dist
+            ancestor = s
+    return ancestor, n1 - 1, n2 - 1
