@@ -18,6 +18,7 @@ if __name__ == "__main__":
     print("sim_wp, Capricciosa-Veneziana", sim_wp(pizza.Capricciosa, pizza.Veneziana))
 
     print("spad, Rosa-Rosa", spad(pizza.Rosa, pizza.Rosa))
+    print("spad, Pizza-NamedPizza", spad(pizza.Pizza, pizza.NamedPizza))
     print("spad, Rosa-Pizza", spad(pizza.Rosa, pizza.Pizza))
     print("spad, Rosa-Capricciosa", spad(pizza.Rosa, pizza.Capricciosa))
     print("spad, Rosa-ParmaHamTopping", spad(pizza.Rosa, pizza.ParmaHamTopping))

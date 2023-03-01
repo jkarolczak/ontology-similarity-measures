@@ -29,10 +29,11 @@ def sim_wp(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingClass) -> 
 
 def spad(c1: owlready2.entity.ThingClass, c2: owlready2.entity.ThingClass) -> float:
     if c1 == c2:
-        return 1
-    ancestor, n1, n2 = utils.closest_ancestor(c1, c2)
-    sp = len(utils.shortest_path(c1, c2)) - 1
-    return 2 * np.log(1 / (((n1 + n2) / 2) * sp) + 1)
+        sp, n1, n2 = 0, 0, 0
+    else:
+        ancestor, n1, n2 = utils.closest_ancestor(c1, c2)
+        sp = len(utils.shortest_path(c1, c2)) - 1
+    return np.log2(1 / max(sp, 1) + 1) / (1 + np.absolute(n1 - n2))
 
 
 def _c_prob(c: owlready2.entity.ThingClass,
@@ -68,15 +69,15 @@ def _most_informative_subsume(c1: owlready2.entity.ThingClass,
 
 
 def sim_resnik(c1: owlready2.entity.ThingClass,
-           c2: owlready2.entity.ThingClass,
-           c_top: owlready2.entity.ThingClass = owl.Thing) -> float:
+               c2: owlready2.entity.ThingClass,
+               c_top: owlready2.entity.ThingClass = owl.Thing) -> float:
     mis, p_mis = _most_informative_subsume(c1, c2, c_top)
     return -log(p_mis)
 
 
 def sim_lin(c1: owlready2.entity.ThingClass,
-        c2: owlready2.entity.ThingClass,
-        c_top: owlready2.entity.ThingClass = owl.Thing) -> float:
+            c2: owlready2.entity.ThingClass,
+            c_top: owlready2.entity.ThingClass = owl.Thing) -> float:
     n = len(list(c_top.instances()))
     mis, p_mis = _most_informative_subsume(c1, c2, c_top, n=n)
     p_c1, p_c2 = _c_prob(c1, c_top, n=n), _c_prob(c2, c_top, n=n)
@@ -100,7 +101,7 @@ def _get_relations(c: owlready2.Thing, return_dict: bool = False):
 
 
 def sim_tversky(c1: owlready2.entity.ThingClass,
-        c2: owlready2.entity.ThingClass, alpha: float = 0.5) -> float:
+                c2: owlready2.entity.ThingClass, alpha: float = 0.5) -> float:
     c1_relations, c2_relations = _get_relations(c1), _get_relations(c2)
     intersect = len(c1_relations.intersection(c2_relations))
     c1_diff = len(c1_relations.difference(c2_relations))
@@ -109,7 +110,7 @@ def sim_tversky(c1: owlready2.entity.ThingClass,
 
 
 def sim_swsn(c1: owlready2.entity.ThingClass,
-        c2: owlready2.entity.ThingClass, alpha: float = 0.5) -> float:
+             c2: owlready2.entity.ThingClass, alpha: float = 0.5) -> float:
     c1_relations, c2_relations = _get_relations(c1, return_dict=True), _get_relations(c2, return_dict=True)
     properties = set(c1_relations.keys()).union(set(c2_relations.keys()))
 
@@ -150,8 +151,3 @@ def sim_swsn(c1: owlready2.entity.ThingClass,
     if denominator == 0:
         raise ValueError("At least one of the instances must have non-zero number of relations")
     return round(nominator / denominator, 6)
-
-
-
-
-
